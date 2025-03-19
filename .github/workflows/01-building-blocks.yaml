@@ -7,4 +7,14 @@ jobs:
         steps: # explains what needs to be done 
             - name: echo hello world
               run: echo "Hello, World!" 
-
+    
+    echo-goodbye:
+        runs-on: ubuntu-latest # adding the runners
+        steps: # explains what needs to be done 
+            - name: failed steps
+              run: |
+                echo "I WIll Fail"
+                exit 1 
+            - name: say goodbye
+              run: echo "Goodbye, World!"
+             
