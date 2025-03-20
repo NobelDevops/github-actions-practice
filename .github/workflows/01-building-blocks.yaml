@@ -1,5 +1,5 @@
 name: 01 - building blocks #this is how you have to write the workflow
-on:  push # trigger 
+on:  workflow_dispatch # trigger 
 
 jobs:
     echo-hello:
