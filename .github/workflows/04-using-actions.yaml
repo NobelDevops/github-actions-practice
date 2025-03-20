@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest 
         defaults:
           run:
-            working-directory: 04-using-actions/react-app
+            working-directory: 04-using-actions/react-app # default locations 
         steps:
             - name: checkout Code 
               uses: actions/checkout@v4 # codes usually will not checkout from the repo we have to add this to checkout
@@ -19,7 +19,7 @@ jobs:
               run: npm ci
               
             - name: Run Unit test
-              run: npm-test
+              run: npm run test
             
         
         # Checkout the code 
