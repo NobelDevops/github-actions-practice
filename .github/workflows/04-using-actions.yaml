@@ -8,8 +8,14 @@ jobs:
         steps:
             - name: checkout Code 
               uses: actions/checkout@v4 # codes usually will not checkout from the repo we have to add this to checkout
-            - name: printing Folders
-              run: ls
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                node-version: latest
+            - name: Install Dependencies
+              run: npm ci
+
+
         
         # Checkout the code 
         #1.insta;; deps of our react application
