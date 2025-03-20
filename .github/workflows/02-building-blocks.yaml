@@ -3,8 +3,6 @@ name: 02 - workflow Events
 on: 
     push:
     pull_request:
-    schedule:
-        - cron: '*/5 * * * *' #added the cron expersion 
     workflow_dispatch: # added for manual triggering
     
 
